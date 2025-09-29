@@ -4,14 +4,20 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Negative;
 import jakarta.validation.constraints.NotBlank;
-// Lombok imports removed (not used). If you prefer Lombok, annotate the class and re-add them.
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
-
 @Entity
+@Table(name = "produtos")
 public class Produto {
 
     @Id    
